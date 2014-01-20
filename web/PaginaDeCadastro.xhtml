@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:mj="http://mojarra.dev.java.net/mojarra_ext"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title>Games Soup</title>
+<h:outputStylesheet name="view.css" library="css"/>
+</h:head>
+<h:body>
+    <h:form>
+<h:outputText style="color: #999999; " value="Nome"/>
+<p:inputText /><br/>
+<h:outputText style="color: #999999; " value="Senha"/>
+<p:inputText /><br/>
+<h:outputText style="color: #999999; " value="Email"/>
+<p:inputText /><br/>
+<h:commandButton action="#{Usuario.cadastrado}" value="Cadastre-se"/>
+    </h:form>
+</h:body>
+
+</html>
