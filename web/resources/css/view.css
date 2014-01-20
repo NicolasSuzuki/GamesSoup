@@ -1,0 +1,4 @@
+body{
+	font-size: 15px;
+	background-image: url("#{resource['images/PapelParedeAssassino.jpg']}"); 
+}
