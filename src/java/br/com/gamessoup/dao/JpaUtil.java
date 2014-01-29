@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 
 public class JpaUtil {
-	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("migraine");
+	private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("GamesSoupUP");
 
 	public static EntityManager getEntityManager() {
 		return emf.createEntityManager();

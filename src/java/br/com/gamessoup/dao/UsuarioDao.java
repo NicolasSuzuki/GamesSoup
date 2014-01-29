@@ -8,6 +8,7 @@ package br.com.gamessoup.dao;
 
 import static br.com.gamessoup.model.Noticia_.usuario;
 import br.com.gamessoup.model.Usuario;
+import static br.com.gamessoup.model.Usuario_.email;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -25,7 +26,12 @@ private EntityManager em;
         this.em = em;
     }
 
-    
+    /**
+     * 
+     * @param usuario
+     * @param senha
+     * @return 
+     */
     public Usuario login(String usuario,String senha){
         Query q= em.createQuery("Select u from Usuario as u where u.nome = :n1 and u.senha=:s1");
         q.setParameter("n1", usuario);
@@ -38,4 +44,6 @@ private EntityManager em;
         return null;
         }
     } 
+    
 }
+

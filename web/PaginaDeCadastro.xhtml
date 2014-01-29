@@ -13,11 +13,11 @@
 <h:body>
     <h:form>
 <h:outputText style="color: #999999; " value="Nome"/>
-<p:inputText /><br/>
+<p:inputText value="#{Usuario.nome}" /><br/>
 <h:outputText style="color: #999999; " value="Senha"/>
-<p:inputText /><br/>
+<p:password  value="#{Usuario.senha}"/><br/>
 <h:outputText style="color: #999999; " value="Email"/>
-<p:inputText /><br/>
+<p:inputText  value="#{Usuario.email}"/><br/>
 <h:commandButton action="#{Usuario.cadastrado}" value="Cadastre-se"/>
     </h:form>
 </h:body>

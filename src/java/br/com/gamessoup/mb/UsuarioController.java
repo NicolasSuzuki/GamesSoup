@@ -70,7 +70,14 @@ public class UsuarioController {
 				return "PaginaDeCadastro";
 			}
 			public String cadastrado(){
-				return "index";
-			}
-                        
-}
+                                    EntityManager em = JpaUtil.getEntityManager();
+                                    Usuario u = new Usuario();
+                                    u.setNome(nome);
+                                    u.setSenha(senha);
+                                    u.setEmail(email);
+                                    UsuarioDao dao = new UsuarioDao (em);
+                                    dao.insert(u);
+            return "index";
+                       
+                        } 
+}          
